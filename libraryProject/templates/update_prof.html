@@ -1,0 +1,46 @@
+{% extends 'navbar.html' %}
+{% block content %}
+<div>
+
+
+<form method="post">
+  {% csrf_token %}
+  <div id="div1" style="margin-left:30%;">
+    <h2 align="center">Update the Profile settings </h2>
+  <table align="center" width="50%" style="height:30%">
+
+
+
+    <tr>
+      <td>StudentName:</td>
+      <td><input type="text" name="txtStudentName" value="{{ data.StudentName}}"></td>
+    </tr>
+    <tr>
+
+    <tr>
+      <td>Pno:</td>
+      <td><input type="number" name="txtPno" value="{{ data.Pno}}"></td>
+    </tr>
+       <tr>
+      <td>Semester:</td>
+      <td><input type="number" name="txtSemester" value="{{ data.Semester}}"></td>
+    </tr>
+       <tr>
+      <td>Password:</td>
+      <td><input type="password" name="txtPassword" value="{{ data.Password}}"></td>
+    </tr>
+       <tr>
+      <td>Course:</td>
+      <td><input type="course" name="txtCour" value="{{ data.Course}}"></td>
+    </tr>
+       <tr>
+        <td><input type="submit" name="btnsub" value="updateprofile"></td>
+      </tr>
+
+  </table>
+  </div>
+</form>
+
+
+</div>
+{% endblock %}

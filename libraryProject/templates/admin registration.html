@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 align="center">Admin RegistrationPage</h2>
+
+<form action="admindata" method="post">
+   {% csrf_token %}
+    <h3 style="color:orange" align="center">{{ adata }}</h3>
+   <table align="center">
+      <tr>
+        <td>AdminName</td>
+        <td><input type="text" name="txtAdminName" placeholder="enter the name"></td>
+      </tr>
+       <tr>
+        <td>Password</td>
+        <td><input type="password" name="txtPassword"></td>
+      </tr>
+       <tr>
+        <td>Email</td>
+        <td><input type="email" name="txtEmail"></td>
+      </tr>
+      <tr>
+        <td><input type="submit" name="btnsub" value="Register"></td>
+      </tr>
+
+   </table>
+</form>
+</body>
+</html>
